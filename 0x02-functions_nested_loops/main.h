@@ -1,5 +1,5 @@
-#ifndef HOLBERTON_H_INCLUDED
-#define HOLBERTON_H_INLUDED
+#ifndef main_h
+#define main_h
 
 int _putchar(char);
 void print_alphabet(void);
@@ -16,5 +16,3 @@ void print_to_98(int n);
 void num(int r, int n);
 
 #endif
-
-			int 
