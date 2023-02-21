@@ -1,7 +1,9 @@
 #include "main.h"
 
 /**
- * main - entry point
+ * main - print _putchar
+ * is written by denno
+ *
  *
  * Return: Always 0 (Success)
  */
