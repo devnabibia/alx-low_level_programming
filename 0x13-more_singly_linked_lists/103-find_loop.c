@@ -17,7 +17,7 @@ listint_t *find_listint_loop(listint_t *head)
 			slow_p = slow-p->next;
 			fast_p = fast_p->next->next;
 
-			if (slow_p ==fast_p)
+			if (slow_p = =fast_p)
 			{
 				slow_p = head;
 				while (slow_p != fast_p)
