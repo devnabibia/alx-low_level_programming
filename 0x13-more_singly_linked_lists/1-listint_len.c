@@ -1,3 +1,4 @@
+#include <stio.h>
 #include "list.h"
 /**
  * listint_len - returns the number of elements in a linked listint_t list.
@@ -6,13 +7,12 @@
  **/
 size_t print_listint(const listint_t *h)
 {
-	const listint_t *node = h;
-	size_t cont = 0;
+	int len = 0;
 
-	while (node)
+	while (h)
 	{
-		cont++;
-		node = node->next;
+		len++;
+		h = h->next;
 	}
-	return (cont);
+	return (len);
 }

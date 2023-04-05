@@ -1,4 +1,5 @@
-
+#include <string.h>
+#include <stdlib.h>
 #include "lists.h"
 
 /**
@@ -6,7 +7,7 @@
  * @head: point the head of list
  * Return: void
  */
-oid free_listint2(listint_t **head)
+void free_listint2(listint_t **head)
 {
 	listint_t *next, *ptr;
 
