@@ -3,17 +3,17 @@
  * flip_bits - entry
  * @n: interger
  * @m: ineterger
- * return: 0
+ * return: count
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
 	unsigned long int a = n ^ m;
-	int b = 0;
+	int count = 0;
 
-	while (b)
+	while (count)
 	{
-		b += a & 1;
+		count += a & 1;
 		a >>= 1;
 	}
-	return (b);
+	return (count);
 }
