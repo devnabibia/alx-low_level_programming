@@ -1,14 +1,12 @@
 #include "main.h"
 /**
- * get_endianness - entry
+ * get_endianness - entry point
  *
- * return: 0
+ * Return: 0 for big endian, 1 for little endian
  */
 int get_endianness(void)
 {
-	int i;
-	int x;
+	int x = 1;
 
-	x = (char *)&i;
-	return (x + 65);
+	return (*((char *) &x) + '0');
 }
