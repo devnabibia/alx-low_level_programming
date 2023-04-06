@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 /**
  * binary_to_uint - input
  * @b: declared char
@@ -6,22 +7,25 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int i = 0;
-	int a = 1, c = 0;
+	unsigned int i, dee;
+	unsigned int denno;
 
+	i = dee = denno = 0;
 	if (b == NULL)
 		return (0);
-	while (b[c + 1])
+	while (b[dee] != '\0')
 	{
-		if (b[c] != '0' && b[c] != '1')
+		if (b[dee] == '0' || b[dee] == '1')
+			dee++;
+		else
 			return (0);
-		c++;
 	}
-	while (c >= 0)
+	while (i < dee)
 	{
-		i += ((b[c] - '0') * a);
-		a *= 2;
-		c--;
+		denno = denno << 1;
+		if (b[i] == '1')
+			denno += 1;
+		i++;
 	}
-	return (i);
+	return (denno);
 }
