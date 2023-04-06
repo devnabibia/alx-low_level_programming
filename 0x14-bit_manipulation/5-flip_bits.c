@@ -7,13 +7,17 @@
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-	unsigned long int a = n ^ m;
-	int count = 0;
+	unsigned long int dee = 0, count = 0;
 
-	while (count)
+	mask = n ^ m;
+	while (dee)
 	{
-		count += a & 1;
-		a >>= 1;
+		if (dee & 1)
+			count++;
+
+	dee >>= 1;
 	}
+
 	return (count);
+}
 }
