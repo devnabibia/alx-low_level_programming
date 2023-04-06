@@ -9,22 +9,22 @@
  */
 void print_binary(unsigned long int n)
 {
-	unsigned long int printbit = 1ul << 63;
+	unsigned long int p = 1ul << 63;
 	char c = '0';
 
-	while (!(printbit & n) && printbit != 0)
-		printbit = printbit >> 1;
+	while (!(p & n) && p != 0)
+		p = p >> 1;
 
-	if (printbit == 0)
+	if (p == 0)
 		write(1, &c, 1);
 
-	while (printbit)
+	while (p)
 	{
-		if (printbit & n)
+		if (p & n)
 			c = '1';
 		else
 			c = '0';
 		write(1, &c, 1);
-		printbit = printbit >> 1;
+		p = p >> 1;
 	}
 }
