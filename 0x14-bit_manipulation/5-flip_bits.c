@@ -1,23 +1,21 @@
 #include "main.h"
 /**
- * flip_bits - entry
- * @n: interger
- * @m: ineterger
- * return: count
+ * flip_bits - returns the number of bits
+ * @n: int
+ * @m: int
+ * Return: number of bits
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-	unsigned long int dee = 0, count = 0;
+	unsigned int count = 0;
 
-	mask = n ^ m;
-	while (dee)
+	while (n != 0 || m != 0)
 	{
-		if (dee & 1)
+		if ((n & 1) != (m & 1))
 			count++;
-
-	dee >>= 1;
+		m = m >> 1;
+		n = n >> 1;
 	}
 
 	return (count);
-}
 }
