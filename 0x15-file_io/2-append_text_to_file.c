@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include <stdlib.h>
 #include "main.h"
 
 /**
@@ -21,7 +23,7 @@ int append_text_to_file(const char *filename, char *text_content)
 		i++;
 	}
 
-	file = open(filename, 0_WRONLY | 0_APPEND);
+	file = open(filename, O_WRONLY | O_APPEND);
 
 	if (file == -1)
 		return (-1);
