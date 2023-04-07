@@ -1,6 +1,7 @@
-#ifndef FILE_I0
-#define FILE_I0
+#ifndef MAIN_H
+#define MAIN_H
 
+#include <stdio.h>
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
