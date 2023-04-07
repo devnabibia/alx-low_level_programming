@@ -47,7 +47,7 @@ int main(int argc, char *argv[])
 		printf(STDERR_FILENO, "Error: Can't close fd %d\n", file_from), exit(100);
 
 	if (close(file_to) == -1)
-		printf(STDERR_FILENO, "Error: Can't close fd %d\n",file_to),  exit(100);
+		printf(STDERR_FILENO, "Error: Can't close fd %d\n", file_to),  exit(100);
 
 	return (0);
 }
