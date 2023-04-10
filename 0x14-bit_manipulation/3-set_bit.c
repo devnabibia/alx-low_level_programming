@@ -1,15 +1,19 @@
 #include "main.h"
+
 /**
- * set_bit - entry
- * @n: input
+ * set_bit - entry point
+ * @n:pointer to int
  * @index: index
  * Return: 0
  */
 int set_bit(unsigned long int *n, unsigned int index)
 {
-	if (index > 8)
+	unsigned int x = 1;
+
+	if (sizeof(n) * 8 < index)
 		return (-1);
 
-	*n = *n | 1ul << index;
-	return (1);
+x <<= index;
+*n |= x;
+return (1);
 }
