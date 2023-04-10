@@ -2,7 +2,7 @@
 /**
  * get_endianness - entry point
  *
- * Return: 0 for big endian, 1 for little endian
+ * Return: 0 on success
  */
 int get_endianness(void)
 {
