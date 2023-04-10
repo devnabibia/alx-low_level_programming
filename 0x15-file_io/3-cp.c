@@ -3,8 +3,8 @@
 #include "main.h"
 
 /**
-* main - program that copies
-* @argc: num argument
+* main - entry point
+* @argc: nuberm argument
 * @argv: string argument
 * Return: 0
 */
