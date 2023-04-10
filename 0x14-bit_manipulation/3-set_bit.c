@@ -7,7 +7,7 @@
  */
 int set_bit(unsigned long int *n, unsigned int index)
 {
-	if (index > 9)
+	if (index > 8)
 		return (-1);
 
 	*n = *n | 1ul << index;
